@@ -1,3 +1,12 @@
+"""
+Within the request, the messages block describes a set of messages and roles used in a
+request. Messages for a chat completions model can be defined in three roles:
+    - System role—A message that describes the request’s rules and guidelines. It can
+      often be used to describe the role of the LLM in making the request.
+    - User role—Represents and contains the message from the user.
+    - Assistant role—Can be used to capture the message history of previous responses
+      from the LLM. It can also inject a message history when perhaps none existed.
+"""
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
