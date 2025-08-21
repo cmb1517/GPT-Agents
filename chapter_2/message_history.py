@@ -25,7 +25,7 @@ def ask_chatgpt(messages):
     
     return response.choices[0].message.content
 
-
+# The message sent in a single request can encapsulate an entire conversation
 messages = [
     {
         "role": "system",
